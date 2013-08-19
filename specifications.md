@@ -20,11 +20,11 @@ Tools must be developped to import the files to easy to use database.
 
 Every object is identified by an URI having the following structure:
 
-    http://stations.io/{object_type}/{id}
+    http://stations.io/{collection_name}/{id}
 
 This ID must be unique and stable over time.
 
-The object type is defined in https://github.com/OpenTransport/vocabulary
+The collection name is the plurial of object types defined in https://github.com/OpenTransport/vocabulary
 
 The id, is randomly generated hex string. The motivations are the following:
 
@@ -38,7 +38,7 @@ Every object can be aliased in order to use the local ID in different systems (A
 
 Aliases have the following structure and are not considered stable.
 
-    http://stations.io/{object_type}/{referential}/{id}
+    http://stations.io/{collection_name}/{referential}/{id}
 
 
 ## Tables
